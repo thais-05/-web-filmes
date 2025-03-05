@@ -1,0 +1,65 @@
+body::before{
+    
+    content: "";
+    background-color: black;
+    background-image: url(../Img/fund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 820px;
+    position: absolute;
+    z-index: -1;
+}
+.div{
+    border: 5px solid black;
+    width: 600px;
+    height: auto;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.adm{
+    margin-left: 10px;
+}
+.cor{
+    color: #000000;
+    
+   
+}
+.cadastro{
+    margin-top: -55px;
+    margin-left: 320px;
+    background-color: white;
+}
+.entrar{
+    margin-left: 243px
+}
+h6{
+    color: #700e0e;
+}
+.espaço{
+    height: 30px;
+}
+.espaço2{
+height: 12px;    
+}
+.alinhamento{
+    
+    color: #700e0e;
+    text-align: center;
+}
+.Conta{
+    margin-left: 155px;
+    margin-top: 30px;
+}
+.cor1{
+    color: white;
+   
+}
+.Pesquisar{
+    border: 2px solid white;
+}
+.centro{
+    text-align: center;
+}

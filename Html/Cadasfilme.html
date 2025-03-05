@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Web Filmes</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/Cadasfilme.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #700e0e;">
+        <a class="navbar-brand " href="../Index.html">Web Filmes</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  
+                </li>
+               
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-sm-2" type="text" placeholder="Digite um filme">
+                <button class="btn my-2 my-sm-0 bs-warning cor1 Pesquisar" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="div container">
+        <form action="../php/adm.php" method="post" enctype="multipart/form-data">
+            <div class="espaço"></div>
+            <h2 class="alinhamento">Cadastro de filmes</h2>
+            <div class="espaço2"></div>
+            <label for="Nome"><h5> Nome do filme:</h5></label>
+              <input type="text" class="form-control" id="Nome" placeholder="Digite o nome do filme" name="nome_f">
+              <div class ="espaço2"></div>
+              <label for="user"><h5> User name:</h5></label>
+              <input type="text" class="form-control" id="user" placeholder="Digite o seu user name" name="user">
+              <div class ="espaço2"></div>
+              <label for="Classificacao"><h5> Classificação: </h5></label>
+              <input type="text" class="form-control" id="Classificacao" placeholder="Digite a classificação do filme" name="classificacao">
+              <div class="espaço2" ></div>
+              <label for="Sinopse"><h5>Sinopse:</h5></label>
+              <input type="text" class="form-control" id="Sinopse" placeholder="Digite a sinopse do filme" name="sinopse">
+              <div class="espaço2" ></div>
+              <label for="Ano"><h5>Ano de lançamento:</h5></label>
+              <input type="text" class="form-control" id="Ano" placeholder="Digite o ano de lançamento do filme" name="ano_lan">
+              <div class="espaço2" ></div>
+              <label for="Tempo"><h5>Duração do filme:</h5></label>
+              <input type="text" class="form-control" id="Tempo" placeholder="Digite a duração do filme" name="duracao">
+              <div class="espaço2" ></div>
+              <label for="Imagem"><h5>Imagem do filme:</h5></label>
+              <input type="file" class="form-control" id="Imagem" name="img_f">
+              <div class="espaço2" ></div>
+              <div class="espaço2" ></div>
+
+              <input type="submit" class="btn btn-outline-danger entrar" value="Cadastre">
+              <br>
+              <div class="espaço"></div>
+            </div>
+              <div class="espaço"></div>
+             
+
+        </form>
+    </div>
+
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+<footer class="bg-dark text-center text-white foot ">
+  <!-- Grid container -->
+  <div class=" p-4 pb-0">
+    <!-- Section: Social media -->
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #700e0e">
+    © 2023 Copyright, Emilly & Thais:
+    
+  </div>
+ </footer>
+</html>

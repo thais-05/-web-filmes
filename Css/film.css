@@ -71,3 +71,28 @@ body {
         position: fixed;
     }
 }
+@media (max-width: 770px) {
+    .film {
+        width: 25%; 
+        height: 100%;
+        margin: 0 1%; 
+    }
+    
+    .film img {
+        width: 180%;
+        height: 80%;
+    }
+    .foot {
+        display: block;
+        position: fixed;
+    }
+    .especial{
+
+            display: none;
+        
+    }
+    .letra{
+        font-size: 18px;
+    }
+}
+

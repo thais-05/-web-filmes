@@ -1,88 +1,101 @@
-*{
-    padding: 0%;
-    margin: 0%;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    
-    background-color: black;
-}
-.filme{
-    
-    height: 400px;
-    width: 2000px;
-    margin-left: 50px;
-    margin-top: 20px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    
-    
-}
-.img{
-margin-top: 30px;
-width: 200px;
-height: auto;
-background-color: black;
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cor{
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do container do filme */
+.filme {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    align-items: center;
+    justify-content: flex-start; /* Mantém os elementos alinhados à esquerda */
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px; /* Espaço entre os itens */
+}
+
+/* Imagem do filme */
+.Imgfilme {
+    max-width: 250px;
+    height: auto;
+    background-color: black;
+    border-radius: 10px;
+    flex-shrink: 0; /* Garante que a imagem não diminua além do limite */
+}
+
+/* Legenda ao lado da imagem */
+.legenda {
+    flex: 1; /* Ocupa o espaço restante */
+    padding: 20px;
     color: white;
-   
+    border-radius: 10px;
 }
-.centro{
-    text-align: center;
+.Classificação{
+    margin-top: 7vh;
 }
-.Pesquisar{
-    border: 2px solid white;
+/* Sinopse abaixo do filme */
+.sinopse {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -2vh;
+    text-align: justify;
+    color: rgb(0, 0, 0);
 }
-.legenda{
-    margin-left: 220px;
-    margin-top: -49vh;
-    height: 300PX;
-    width: 1000px;
+.sinopse2{
+    margin-left: 8vw;
+}
+.margem{
+    margin-left: 0;
 }
 .quadrado{
-    border: 1px solid white;
-    width: 30px;
-    height: 30px;
-    margin-top: -30px;
-    margin-left: 15px;
+ margin-top: 2vh;
 }
-.margimtempo{
-    margin-top: -30px;
-}
-.Branco{
-    background-color: white;
-    color: white;
-    width: 2000px;
-    height: 180px;
-    margin-top: 10px;
-}
-.Fontepreto{
+.Fontepreto {
     color: black;
-    margin-top: -200px;
-    margin-left: 60px;
-}
-.Fontepreto2{
-    color: black;
-    
-}
-.sinopse{
-   
-    width: 700px;
-    margin-left: 250px;
-    margin-top: -40px;
-}
-.filme{
-    margin-left: 150px;
-}
-.linha{
-    height: 5px;
-    background-color: #700e0e;
+    margin-top: 20px;
 }
 
-.foot{
-    margin-top: 150px;
+.linha {
+    height: 6px;
+    background-color: #700e0e;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Branco {
+    background-color: aliceblue;
+}
+
+.foot {
+
+    text-align: center;
+    background-color: #700e0e;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Imgfilme {
+        max-width: 250px;
+        margin: 0 auto 20px;
+}
+.legenda{
+    background-color: #700e0e;
+}
+.linha{
+    display: none;
+}
 }

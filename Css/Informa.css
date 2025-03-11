@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: black;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(41, 12, 12));
     font-family: Arial, sans-serif;
 }
 
@@ -18,6 +18,7 @@ body {
     width: 90%;
     margin: 20px auto;
     display: flex;
+    margin-left: 10vw;
     flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
     align-items: center;
     justify-content: flex-start; /* Mantém os elementos alinhados à esquerda */
@@ -43,7 +44,7 @@ body {
     border-radius: 10px;
 }
 .Classificação{
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 /* Sinopse abaixo do filme */
 .sinopse {
@@ -74,9 +75,24 @@ body {
     border-radius: 5px;
 }
 
-.Branco {
-    background-color: aliceblue;
+.Assita{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(75, 23, 23);
+    border: 2px solid #ffffff;
+    margin-top: 2vh;
+    color: white;
+    order: 0;
 }
+.Assita:hover{
+    border-color: #a22d2d;
+    background-color: rgba(80, 0, 0, 0.614);
+}
+.Branco {
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
 
 .foot {
 
@@ -84,6 +100,7 @@ body {
     background-color: #700e0e;
     color: white;
     padding: 10px;
+    margin-top: 3vh;
 }
 
 /* Responsividade */
@@ -95,7 +112,8 @@ body {
 .legenda{
     background-color: #700e0e;
 }
-.linha{
-    display: none;
+
+.Assita{
+margin-left: 24vw;
 }
 }

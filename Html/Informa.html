@@ -35,30 +35,31 @@
    </nav>
     <div class="filme row">
       <div class="Imgfilme row">
-    <img class="img" src="../Img/element.jpg" alt="">
+    <img class="img" id="imagem-filme"  alt="">
   </div>
   
  
   <div class="legenda row cor">
     
-    <h1>Elementos</h1>
-  
+    <h1 id="titulo-filme">Carregando...</h1>
+    <br>
+    <a  href="#" ><button class="Assita">Assista já</button></a>
     <h3 class="cor Classificação">Classificação:</h3>
   
     <div class="quadrado qmargem">L</div>
-    <h6 class="cor">2023</h6>
-    <h6 class="margimtempo">95 Min</h6>
+    <h6 class="cor" id="ano-filme" ></h6>
+    <h6 class="margimtempo" id="duracao-filme">carre</h6>
   </div>
     </div>
-    <div class="linha"></div> 
     <div class="Branco">
       
     <h1 class="Fontepreto sinopse2">Sinopse:</h1>
     <div class="sinopse">
       <br>
-    <h5 class="Fontepreto2 ">Em uma cidade onde os habitantes de fogo, água, terra e ar convivem, uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo surpreendente, porém elementar: o quanto eles têm em comum.</h5>
-
+    <h5 class="Fontepreto2" id="sinopse-filme">Carregando...</h5>
+<br>
   </div>
+
 </div>  
   <header>
     <!-- place navbar here -->
@@ -73,7 +74,21 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
+<script>
+// Recupera os dados armazenados no localStorage
+  const titulo = localStorage.getItem("tituloFilme");
+  const sinopse = localStorage.getItem("sinopseFilme");
+  const ano = localStorage.getItem("anoFilme");
+  const duracao = localStorage.getItem("duracaoFilme");
+  const imagem = localStorage.getItem("imagemFilme");
 
+  if (titulo && sinopse && ano && duracao && imagem) {
+      document.getElementById("titulo-filme").textContent = titulo;
+      document.getElementById("sinopse-filme").textContent = sinopse;
+      document.getElementById("ano-filme").textContent = ano;
+      document.getElementById("duracao-filme").textContent = duracao;
+      document.getElementById("imagem-filme").src = imagem;
+  }</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>

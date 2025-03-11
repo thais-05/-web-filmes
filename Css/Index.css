@@ -31,12 +31,6 @@ body::before{
     width: 125px;
     text-align: center;
 }
-.botao{
-    background-color: #700e0e;
-   
-    height: 50px;
-    text-align: center;
-}
 .espaço1{
     width: 5px;
     margin-left: 6.5vw;

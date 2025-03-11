@@ -13,40 +13,62 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #700e0e;"></a>
-        <a class="navbar-brand" href="../Index.html"><h5>Web Filmes</h5> </a>
-        <div class="espaço"></div>
-    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #700e0e;">
+        <a class="navbar-brand " href="../Index.html">Web Filmes</a>
+           <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+               aria-expanded="false" aria-label="Toggle navigation"></button>
+           <div class="collapse navbar-collapse" id="collapsibleNavId">
+               <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                   <li class="nav-item">
+                     
+                   </li>
+                
+               </ul>
+               <form class="d-flex my-2 my-lg-0">
+                   <input class="form-control me-sm-2" type="text" placeholder="Digite um filme">
+                   
+                   <a href=""><button type="button" class="btn btn-outline-danger cor Pesquisar">Pesquisar</button>
+                   </button></a>
+               </form>
+           </div>
+       </nav>
 
     <div class="container">
         <div class="row">
             <!-- filme1 -->
             <div class="col film">
-                <a href="../Html/Informa.html"><img src="../Img/element.jpg" alt="" class="img-fluid" alt="Elementos"></a>
+                <img src="../Img/element.jpg" alt="elementos" class="img-fluid" 
+                onclick="salvarFilme('Elementos', 'Em uma cidade onde os habitantes de fogo, água, terra e ar convivem, uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo surpreendente, porém elementar: o quanto eles têm em comum.', '2023', '95 min', '../Img/element.jpg')">
+           
                 <h5 class="letra"> Elementos </h5>
             </div>
             
             <!-- filme2 -->
             <div class="col film">
-                <img src="../Img/ex.jpg" alt="" class="img-fluid" alt="Extraordinário">
+                <img src="../Img/ex.jpg" alt="" class="img-fluid" alt="Extraordinário" 
+                onclick="salvarFilme('Extraordinário', 'Augie Pullman, um menino com deformidade facial, começa a frequentar a escola pela primeira vez, enfrentando os desafios da aceitação e amizade.', '2017', '113 min', '../Img/ex.jpg')">
                 <h5 class="letra"> Extraordinário </h5>
             </div>
             
             <!-- filme3 -->
             <div class="col film">
-                <img src="../Img/divert.jpg" alt="" class="img-fluid" alt="Divertidamente">
+                <img src="../Img/divert.jpg" alt="Divertidamente" class="img-fluid" alt="Divertidamente"
+                onclick="salvarFilme('Divertidamente', 'Riley, uma garota de 11 anos, deve lidar com as suas emoções quando sua família se muda. Dentro de sua mente, suas emoções precisam aprender a trabalhar juntas.', '2015', '95 min', '../Img/divert.jpg')">
                 <h5 class="letra"> Divertidamente </h5>
             </div>
 
             <!-- filme4 -->
             <div class="col film">
-                <img src="../Img/soul.jpg" alt="" class="img-fluid" alt="Soul">
+                <img src="../Img/soul.jpg" alt="" class="img-fluid" alt="Soul"
+                onclick="salvarFilme('Soul', 'Joe Gardner, um professor de música, deve passar por uma jornada para descobrir o que realmente importa na vida após um acidente.', '2020', '100 min', '../Img/soul.jpg')">
                 <h5 class="letra"> Soul </h5>
             </div>
 
             <!-- filme5 -->
             <div class="col film especial">
-                <img src="../Img/desenc.jpg" alt="" class="img-fluid" alt="Desencantada">
+                <img src="../Img/desenc.jpg" alt="" class="img-fluid" alt="Desencantada"
+                onclick="salvarFilme('Desencantada', 'Giselle, após viver feliz para sempre, é forçada a lidar com a vida suburbana e acaba iniciando uma jornada que pode mudar tudo.', '2022', '119 min', '../Img/desenc.jpg')">
+                
                 <h5 class="letra"> Desencantada </h5>
             </div>
         </div>
@@ -56,32 +78,37 @@
         <div class="row">
             <!-- filme6 -->
             <div class="col film">
-                <img src="../Img/pqs.jpg" alt="" class="img-fluid" alt="Pequena Sereia">
+                <img src="../Img/pqs.jpg" alt="" class="img-fluid" alt="Pequena Sereia"
+                onclick="salvarFilme('A Pequena Sereia', 'Ariel, uma sereia, faz um acordo com a bruxa Ursula para trocar sua voz por pernas e viver na terra, tudo para conquistar o príncipe Eric.', '2023', '135 min', '../Img/pqs.jpg')">>
                 <h5 class="letra"> A Pequena Sereia </h5>
             </div>
 
             <!-- filme7 -->
             <div class="col film">
-                <img src="../Img/up.jpg" alt="" class="img-fluid" alt="Up Altas Aventuras">
+                <img src="../Img/up.jpg" alt="" class="img-fluid" alt="Up Altas Aventuras"
+                onclick="salvarFilme('Up Altas Aventuras', 'Carl Fredricksen, um viúvo, realiza seu sonho de viajar para a América do Sul com sua casa flutuante, levando acidentalmente um garoto escoteiro.', '2009', '96 min', '../Img/up.jpg')">
                 <h5 class="letra">Up Altas Aventuras </h5>
             </div>
 
             <!-- filme8 -->
             <div class="col film">
-                <img src="../Img/crod.jpg" alt="" class="img-fluid" alt="Croods">
+                <img src="../Img/crod.jpg" alt="" class="img-fluid" alt="Croods"
+                onclick="salvarFilme('Os Croods', 'Uma família pré-histórica precisa se adaptar ao novo mundo após perder sua caverna, enfrentando perigos e novas descobertas pelo caminho.', '2013', '98 min', '../Img/crod.jpg')">
                 <h5 class="letra"> Os Croods </h5>
             </div>
 
             <!-- filme9 -->
             <div class="col film">
-                <img src="../Img/m.png" alt="" class="img-fluid" alt="A Família Mitchell">
+                <img src="../Img/m.png" alt="" class="img-fluid" alt="A Família Mitchell"
+                onclick="salvarFilme('A Família Mitchell', 'Uma família excêntrica tenta salvar o mundo das máquinas, vivendo uma aventura que une todos de forma inesperada.', '2021', '113 min', '../Img/m.png')">
                 <h5 class="letra"> A Família Mitchell </h5>
             </div>
 
             <!-- filme10 -->
              
             <div class="col film especial">
-                <img src="../Img/hamburguer.png" alt="" class="img-fluid" alt="Tá chovendo hambúrguer 2">
+                <img src="../Img/hamburguer.png" alt="" class="img-fluid" alt="Tá chovendo hambúrguer 2"
+                onclick="salvarFilme('Tá Chovendo Hambúrguer 2', 'Flint e sua turma tentam salvar o mundo de uma invenção que cria alimentos vivos e ameaça destruir o planeta.', '2013', '95 min', '../Img/hamburguer.png')">
                 <h5 class="letra">Tá chovendo hambúrguer 2</h5>
             </div>
         </div>
@@ -97,5 +124,15 @@
         </div>
     </footer>
 </body>
+<script>
+     function salvarFilme(titulo, sinopse, ano, duracao, imagem) {
+            localStorage.setItem("tituloFilme", titulo);
+            localStorage.setItem("sinopseFilme", sinopse);
+            localStorage.setItem("anoFilme", ano);
+            localStorage.setItem("duracaoFilme", duracao);
+            localStorage.setItem("imagemFilme", imagem);
+            window.location.href = "../Html/Informa.html"; // Redireciona para a página de informações
+        }
+</script>
 
 </html>

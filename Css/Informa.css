@@ -60,6 +60,9 @@ body {
 .margem{
     margin-left: 0;
 }
+#iconecasa{
+    width: 30px;
+}
 .quadrado{
  margin-top: 2vh;
 }
@@ -109,11 +112,30 @@ body {
         max-width: 250px;
         margin: 0 auto 20px;
 }
-.legenda{
-    background-color: #700e0e;
+#iconecasa{
+    margin-left: -35vw;
 }
 
-.Assita{
-margin-left: 24vw;
 }
+
+@media (max-width: 570px) {
+    .legenda{
+        background-color: #700e0e;
+    }
+}
+@media (max-width: 540px){
+    #iconecasa{
+        margin-left: -30vw;
+    }
+    .film{
+        overflow-x: none;
+    }
+    .body{
+        overflow: hidden;
+    }
+}
+@media (max-width: 370px){
+    #iconecasa{
+        margin-left: -27vw;
+    }
 }

@@ -21,6 +21,8 @@ body {
     width: 15%; 
     margin: 0 1%; 
     text-align: center;
+    overflow-x: none;
+    
 }
 
 .film img {
@@ -80,7 +82,7 @@ body {
     
     .film img {
         width: 180%;
-        height: 80%;
+        height: 78%;
     }
     .foot {
         display: block;
